@@ -92,6 +92,21 @@ Terraform will provision:
 
 ---
 
+## 🛡 Production Readiness Suggestions
+
+To make this production-grade:
+
+- ✅ Add rate limiting and auth middleware (e.g. API key)
+- ✅ Add retry and timeout logic in RPC calls
+- ✅ Add logging (Zap, Logrus) and tracing
+- ✅ Use Application Load Balancer with HTTPS termination
+- ✅ Use parameterized secrets (e.g. AWS SSM or Secrets Manager)
+- ✅ Add health check endpoints
+- ✅ Implement Prometheus metrics
+- ✅ Enable autoscaling (ECS Service Auto Scaling)
+
+---
+
 
 ## 📁 Project Structure
 
